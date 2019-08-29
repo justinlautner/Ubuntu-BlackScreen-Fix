@@ -8,18 +8,13 @@ If you have a similar issue, with a Radeon GPU and a similar linux distro, feel 
 
 ### Install dpm-query: 
 
-How to run this script: 
----------------
-
 You must first install dpm-query tool, courtesy of illwieckz on github: 
 
 https://github.com/illwieckz/dpm-query
----------------
 
-I have included a script which can do this for you. 
+I have included a script which can do this for you, or you can follow the wonderful directions provided on his repository.
 
 Allow permission to run the script: 
----------------
 ```
 cd /path/to/Ubuntu-BlackScreen-Fix
 
@@ -27,7 +22,6 @@ chmod +x dpm-query_install
 ```
 
 Run the script:
----------------
 ```
 cd /path/to/Ubuntu-BlackScreen-Fix
 
