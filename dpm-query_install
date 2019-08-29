@@ -1,0 +1,22 @@
+#!/bin/sh
+
+echo "*********************************************************************************"
+echo "*   This program will install dpm-query tool into your Documents folder         *"
+echo "*   Feel free to move it wherever you wish, afterwards, or edit it beforehand   *"
+echo "*********************************************************************************"
+
+cd ~/Documents
+if [ -d "dpm-query" ]
+then
+	echo "Directory dpm-query already exists!"
+	echo "If it is not already operable, please delete the folder and re-run this script."
+	echo "If it is already operable, CONGRATS! Go enjoy your new program you spicy meatball!"
+	echo "Exiting..."
+else
+	git clone https://github.com/illwieckz/dpm-query.git
+	cd dpm-query
+	./configure
+	sudo make install
+	./configure --enable-service
+	sudo make install
+fi

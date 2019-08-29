@@ -1,0 +1,5 @@
+#!/bin/sh -e
+
+sudo dpm-query set all high performance
+
+exit 0
