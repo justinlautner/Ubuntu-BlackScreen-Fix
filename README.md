@@ -26,6 +26,10 @@ Run the script:
 cd /path/to/Ubuntu-BlackScreen-Fix
 
 ./dpm-query_install
+
+OR
+
+sh '/path/to/Ubuntu-BlackScreen-Fix'
 ```
 
 As mentioned in the terminal, this will by default install  into your Documents folder. Feel free to move it wherever you wish.
@@ -58,6 +62,16 @@ Add this command somewhere between '#!/bin/sh -e' and 'exit 0'. THIS IS IMPORTAN
 ```
 sudo dpm-query set all high performance
 ```
+#### If your version of ubuntu DOES NOT have rc-local running or enabled
+This is important... If rc-local is not enabled it will not run this command on boot and nothing will be solved!
+
+You can check this by running:
+```
+systemctl enable rc-local
+```
+Does give you an error? If so, follow the steps in this link to get it working...
+
+https://www.linuxbabe.com/linux-server/how-to-enable-etcrc-local-with-systemd
 
 And that's it! Your system will execute this file at the start of every boot, and will hopefully solve your issues in the same way it solved mine :)
 
