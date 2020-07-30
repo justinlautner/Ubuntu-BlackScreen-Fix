@@ -1,6 +1,6 @@
 # Ubuntu-BlackScreen-Fix
 
-This is a guide to fixing Ubuntu black screen crashes not specifically upon startup. More specifically, this is a response to black screen crashes upon clicking the "Show Applications" and "Activiites buttons, as well as occasionally at random. This issue appears to be common with the r9 390, and is a power-saving issue within Ubuntu. By running this script, you force the OS to run at high and perfomance modes, preventing it from terminating the graphical adapter. I run this in 18.04 LTS upon every boot, although, i see no reason why this would not work on any other ubuntu-based distro or version.
+This is a guide to fixing Gnome based black screen crashes not specifically upon startup. More specifically, this is a response to black screen crashes upon clicking the "Show Applications" and "Activiites buttons, as well as occasionally at random. This issue appears to be common with the r9 390, and is a power-saving issue within Linux. By running this script, you force the OS to run at high and perfomance modes, preventing it from terminating the graphical adapter. I run this in 18.04 (now 20.04) LTS upon every boot, although, i see no reason why this would not work on any other Gnome based distro or version. (I have the very same crashing on any distro that uses Gnome, though i have yet to try this fix for other distros).
 
 If you have a similar issue, with a Radeon GPU and a similar linux distro, feel free to try out this solution. It is quite simple, really.
 
